@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { ThemeProvider } from "styled-components"
+import { theme } from "../../constants/_theme"
 import { Header } from "../header/Header"
-import styled from "styled-components"
+import { Footer } from "../footer/Footer"
 
 const Layout = ({ children, sticky }) => {
   const data = useStaticQuery(graphql`
@@ -17,10 +18,11 @@ const Layout = ({ children, sticky }) => {
   `)
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header sticky={sticky} siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-    </>
+      <Footer />
+    </ThemeProvider>
   )
 }
 

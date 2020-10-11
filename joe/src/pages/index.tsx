@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react"
-import "./index.css"
-
 import Layout from "../components/layout/Layout"
 import SEO from "../components/SEO"
+import { Jumbotron } from "../components/Jumbotron/Jumbotron"
+import { Partners } from "../components/partners/Partners"
+import { Missions } from "../components/missions/Missions"
+import { Articles } from "../components/articles/Articles"
+import { Contact } from "../components/contact/Contact"
+
+import "./index.css"
+import "aos/dist/aos.css"
 
 const IndexPage = () => {
   let AOS
@@ -33,7 +39,11 @@ const IndexPage = () => {
   return (
     <Layout sticky={sticky}>
       <SEO title="Home" />
-      We’re built to disrupt the digital era
+      <Jumbotron />
+      <Partners />
+      <Missions />
+      <Articles />
+      <Contact />
     </Layout>
   )
 }
