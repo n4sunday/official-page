@@ -3,7 +3,7 @@ import * as style from "./style.scss"
 import { Typography } from "antd"
 const { Text, Paragraph } = Typography
 const List: FunctionalComponent = () => (
-  <div className={style.list}>
+  <div className={style.list}  data-aos="fade-up">
     <div className={style.gird_col}>
       <Text className={style.date}>12/01</Text>
       <div className={style.gird_row}>

@@ -6,7 +6,11 @@ import Invite from "./invite"
 import Article from "./article"
 import Mission from "./mission"
 import * as AOS from 'aos'
+import 'aos/dist/aos.css';
 const App: FunctionalComponent = () => {
+	useEffect(()=>{
+		AOS.init();
+	},[])
   return (
     <div id="app">
       <Header />
@@ -14,8 +18,8 @@ const App: FunctionalComponent = () => {
         <Mission />
         <Article />
         <Invite />
-        <Footer />
       </div>
+        <Footer />
     </div>
   )
 }
