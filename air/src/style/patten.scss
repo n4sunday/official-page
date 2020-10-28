@@ -1,0 +1,42 @@
+@mixin prefixs($declarations, $prefixes: ()) {
+  @each $property, $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+  }
+}
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+%flex{
+  display:flex;
+}
+%flex-row{
+  flex-direction:row;
+}
+%flex-column{
+  flex-direction:column;
+}
+%justify-between{
+  justify-content:space-between;
+}
+%justify-end{
+  justify-content:flex-end;
+}
+%align-center{
+  align-items: center;
+}
+%flex-row-between{
+  @extend %flex;
+  @extend %flex-row;
+  @extend %justify-between;
+}
+%flex-align-center{
+  @extend %flex;
+  @extend %align-center;
+}

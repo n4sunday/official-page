@@ -1,0 +1,25 @@
+@import "style/patten";
+.footer {
+  padding: 10px 61px;
+}
+.container {
+  @extend %flex-row-between;
+}
+.container_icon {
+  @extend %flex-align-center;
+}
+.icon_fb {
+  height: 46px !important;
+  color: #cecece;
+  margin: 0 33px;
+  cursor: pointer;
+  width: 20px !important;
+}
+.icon_tw {
+  height: 46px !important;
+  color: #cecece;
+  margin: 0 33px;
+  cursor: pointer;
+  width: 32px !important;
+}
+
