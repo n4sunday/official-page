@@ -1,20 +1,15 @@
 import { h ,FunctionalComponent} from 'preact';
-import { Router } from 'preact-router';
-
 import Header from './header';
-
-// Code-splitting is automated for `routes` directory
-import Home from '../routes/home';
-import Profile from '../routes/profile';
+import { Button } from 'antd';
 
 const App: FunctionalComponent = () => (
 	<div id="app">
 		<Header />
-		<Router>
-			<Home path="/" />
-			<Profile path="/profile/" user="me" />
-			<Profile path="/profile/:user" />
-		</Router>
+		<div style={{padding:80}}>
+
+		</div>
+		<Button type="primary">Primary Button</Button>
+		<div>asdasdasd</div>
 	</div>
 )
 
