@@ -19,6 +19,6 @@
     "baseUrl": ".",
     "jsxFactory": "preserve"
 	},
-	"include": ["webpack.config.js", "**/*.ts", "**/*.tsx"],
+	"include": ["src/components","src/webpack.config.js","src/declarations.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }

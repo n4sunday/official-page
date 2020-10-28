@@ -1,5 +1,7 @@
 import { h ,FunctionalComponent} from 'preact';
 import Header from './header';
+import Footer from './footer';
+import Invite from './invite';
 import { Button } from 'antd';
 
 const App: FunctionalComponent = () => (
@@ -10,6 +12,8 @@ const App: FunctionalComponent = () => (
 		</div>
 		<Button type="primary">Primary Button</Button>
 		<div>asdasdasd</div>
+		<Invite/>
+		<Footer/>
 	</div>
 )
 
