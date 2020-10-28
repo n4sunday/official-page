@@ -1,0 +1,59 @@
+.container {
+  background: #c5283f;
+  padding: 60px 122px;
+  height: 1100px;
+}
+.content {
+  position: relative;
+}
+.headerBold {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+.headerSlim {
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+}
+.paragraph {
+  color: white;
+  width: 250px;
+  margin: 40px 33px;
+}
+%patten-img {
+  // box-shadow: 0px 1px 35px rgba(40, 40, 40, 0.07);
+  border-radius: 12px;
+  position: absolute;
+}
+.img1 {
+  @extend %patten-img;
+  left: -2.4%;
+  top: 114%;
+  // width: 285px;
+  // height: 446px;
+}
+.img2 {
+  @extend %patten-img;
+  left: 25%;
+  top: 155%;
+  // width: 270px;
+  // height: 489px;
+}
+
+.img3 {
+  @extend %patten-img;
+  left: 52%;
+  top: 87%;
+  // width: 270px;
+  // height: 428px;
+}
+
+.img4 {
+  @extend %patten-img;
+  left: 80%;
+  top: 10%;
+  // width: 270px;
+  // height: 543px;
+}
