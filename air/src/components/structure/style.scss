@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  padding: 60px 122px;
+}
+.header {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 60px 0px;
+}
+.date {
+  font-weight: normal;
+  font-size: 26px;
+}
+.title {
+  font-weight: 600;
+  font-size: 26px;
+}
+.detail {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.gird_col {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+.gird_row {
+  display: grid;
+  grid-template-rows: 1fr 65px;
+}
+.wrapperList {
+  width: 620px;
+  margin: 50px 0;
+}
+.divider {
+  width: 80%;
+}
+.underline {
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 0;
+}

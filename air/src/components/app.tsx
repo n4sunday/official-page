@@ -2,16 +2,15 @@ import { h ,FunctionalComponent} from 'preact';
 import Header from './header';
 import Footer from './footer';
 import Invite from './invite';
+import Structure from './structure';
 import { Button } from 'antd';
 
 const App: FunctionalComponent = () => (
 	<div id="app">
 		<Header />
-		<div style={{padding:80}}>
+		<Invite/>
 
-		</div>
-		<Button type="primary">Primary Button</Button>
-		<div>asdasdasd</div>
+		<Structure/>
 		<Invite/>
 		<Footer/>
 	</div>
