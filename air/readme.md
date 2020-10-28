@@ -1,4 +1,6 @@
 #  Pi R SQUARE
+## static page
+https://pir-official-page.vercel.app/
 
 ## CLI Commands
 
