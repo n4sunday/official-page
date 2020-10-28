@@ -1,6 +1,7 @@
 @import "style/patten";
 .footer {
   padding: 10px 61px;
+  // background-color:#E5E5E5;
 }
 .container {
   @extend %flex-row-between;
@@ -15,11 +16,17 @@
   cursor: pointer;
   width: 20px !important;
 }
+.icon_fb:hover {
+  color: #C5283F;
+}
 .icon_tw {
   height: 46px !important;
   color: #cecece;
   margin: 0 33px;
   cursor: pointer;
   width: 32px !important;
+}
+.icon_tw:hover {
+  color: #C5283F;
 }
 

@@ -1,6 +1,6 @@
 import { h, FunctionalComponent } from "preact"
 import * as style from "./style.scss"
-import { Typography, Space } from "antd"
+import { Typography } from "antd"
 const { Text, Paragraph } = Typography
 const About: FunctionalComponent = () => (
   <div className={style.container}>
